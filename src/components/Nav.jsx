@@ -59,7 +59,7 @@ const Nav = () => {
               : `fixed top-0 left-0 z-[999] w-[100%] h-[100dvh] bg-white`
           }`}
         >
-          <div className="flex justify-end mr-10 mt-10">
+          <div className="flex justify-end mr-10 mt-8">
             <img
               src={cross}
               alt="cross"
@@ -67,12 +67,12 @@ const Nav = () => {
               className="cursor-pointer"
             />
           </div>
-          <div className="flex flex-col justify-center items-center gap-16 pt-[40%]">
+          <div className="flex flex-col justify-center items-center gap-16 pt-[12%]">
             {navLinks.map((item) => (
               <li key={item.label} className="list-none">
                 <a
                   href={item.href}
-                  className="font-montserrat leading-normal text-coral-red font-semibold text-2xl"
+                  className="font-montserrat leading-normal text-coral-red font-semibold text-xl"
                   onClick={handleShow}
                 >
                   {item.label}
